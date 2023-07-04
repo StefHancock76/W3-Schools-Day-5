@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+  
+<html>
+  
+<head>
+    <style>
+
+
+        .container {
+      
+      
+          border: 1px solid black;
+      
+      
+          width: 100%;
+      
+      
+        }
+      
+      
+      
+      
+      
+        .box {
+      
+      
+          background-color: lightblue;
+      
+      
+      
+      
+      
+          border: 1px solid black;
+      
+      
+      
+      
+      
+          padding: 10px;
+      
+      
+      
+      
+      
+          margin: 10px;
+      
+      
+      
+      
+      
+          max-width: 300px;
+      
+      
+          display: inline-block;
+      
+      
+        }
+      
+      
+      
+      
+      
+        .float-left {
+      
+      
+          float: left;
+      
+      
+          background-color: cadetblue;
+      
+      
+        }
+      
+      
+      
+      
+      
+        .float-right {
+      
+      
+          float: right;
+      
+      
+          background-color: chartreuse;
+      
+      
+        }
+      
+      
+        .container::after {
+      
+      
+          clear: both;
+      
+      
+        }
+      
+      
+      </style>
+  
+  <!--<style>
+  
+    .container {
+  
+      border: 1px solid black;
+  
+      overflow: auto; /* Ensures container expands to contain floated elements */
+  
+    }
+    
+  
+    .left {
+  
+        
+      width: 200px;
+  
+      background-color: lightblue;
+  
+    }
+   
+  
+    .center {
+      
+      max-width: 400px;
+  
+      margin: 0 auto; /* Horizontally centers the element */
+  
+      background-color: lightgreen;
+  
+    }
+
+  
+    .right {
+  
+      float: right;
+  
+      width: 200px;
+  
+      background-color: lightcoral;
+  
+    }
+
+      
+.box {
+  
+  background-color: lightblue;
+  
+  border: 1px solid black;
+  
+  padding: 10px;
+  
+  margin: 10px;
+  
+  max-width: 300px;
+  
+}
+  
+  </style>-->
+  
+</head>
+  
+<body>
+  
+  <div class="container">
+  
+    <div class="left">
+  
+      <!-- Add content here -->
+  
+    </div>
+  
+    <div class="center">
+  
+      <!-- Add content here -->
+  
+    </div>
+  
+    <div class="right">
+  
+      <!-- Add content here -->
+  
+    </div>
+  
+  </div>
+  <div class="container"> <div class="box float-left">Box 1</div> <div class="box float-left">Box 2</div> <div class="box float-right">Box 3</div> <div class="box float-right">Box 4</div> <div style="clear: both;"></div></div>
+
+  <div class="container">
+  
+  <div class="box float-left">Box 1</div>
+  
+  <div class="box float-left">Box 2</div>
+  
+  <div class="box float-right">Box 3</div>
+  
+  <div class="box float-right">Box 4</div>
+  
+  <div style="clear: both;"></div>
+  
+</div>
+  
+</body>
+  
+</html>
